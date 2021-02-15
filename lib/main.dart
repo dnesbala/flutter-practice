@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/ui/facebook_appbar.dart';
+import 'widgets/widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: FacebookAppBar(),
+      home: DismissibleListPage(),
     );
   }
 }
