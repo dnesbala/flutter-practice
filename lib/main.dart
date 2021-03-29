@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'widgets/widgets.dart';
+import 'package:flutter_practice/ui/daraz_cart/daraz_cart_page.dart';
+// import 'widgets/widgets.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: DismissibleListPage(),
+      home: DarazCartPage(),
     );
   }
 }
