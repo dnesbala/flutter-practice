@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/constants/app_colors.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DarazCartBottomSheet extends StatelessWidget {
-  static const TextStyle blackText =
-      TextStyle(color: Colors.black, fontSize: 16);
-  static const darazOrangeColor = Color(0xFFFF6801);
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,7 +13,8 @@ class DarazCartBottomSheet extends StatelessWidget {
             children: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.circle),
+                icon: FaIcon(FontAwesomeIcons.circle,
+                    color: Colors.grey.shade300),
               ),
               Text("All"),
             ],
@@ -35,8 +34,8 @@ class DarazCartBottomSheet extends StatelessWidget {
                       children: [
                         TextSpan(
                           text: "Rs. 0",
-                          style:
-                              TextStyle(fontSize: 14, color: darazOrangeColor),
+                          style: TextStyle(
+                              fontSize: 14, color: AppColors.darazOrangeColor),
                         ),
                       ],
                     ),
@@ -51,7 +50,7 @@ class DarazCartBottomSheet extends StatelessWidget {
                           text: "Rs.0",
                           style: TextStyle(
                               fontSize: 18,
-                              color: darazOrangeColor,
+                              color: AppColors.darazOrangeColor,
                               fontWeight: FontWeight.bold),
                         ),
                       ],
