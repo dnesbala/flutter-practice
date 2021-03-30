@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 class Product {
   String imageUrl;
   String title;
+  String subtitle;
   Color color;
   int price;
   int quantity;
-  String shopName;
 
   Product({
     @required this.imageUrl,
@@ -17,7 +17,7 @@ class Product {
     this.color,
     @required this.price,
     @required this.quantity,
-    @required this.shopName,
+    @required this.subtitle,
   });
 
   Map<String, dynamic> toMap() {
@@ -27,7 +27,7 @@ class Product {
       'color': color.value,
       'price': price,
       'quantity': quantity,
-      'shopName': shopName,
+      'shopName': subtitle,
     };
   }
 
@@ -38,7 +38,7 @@ class Product {
       color: Color(map['color']),
       price: map['price'],
       quantity: map['quantity'],
-      shopName: map['shopName'],
+      subtitle: map['shopName'],
     );
   }
 

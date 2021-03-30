@@ -20,7 +20,7 @@ class CartManufacturerTitle extends StatelessWidget {
           ),
           Text(
             manufacturerTitle,
-            style: Theme.of(context).textTheme.bodyText1,
+            style: TextStyle(fontSize: 16, color: Colors.black87),
           ),
           IconButton(
             onPressed: () {},
